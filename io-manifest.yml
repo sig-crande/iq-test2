@@ -45,7 +45,7 @@ environment:
   githubToken: <<GITHUB_TOKEN>>
   githubApiUrl: https://api.github.com/repos/
   testDeploymentRoot: "insecure-bank"
-  imChannelIdentifier: "#C01RF6ALQ49"
+  imChannelIdentifier: "C01RF6ALQ49"
   jiraProjectName: "IQ3"
   jiraIssuesQuery: "project=IQ3"
   jiraApiUrl: <<JIRA_API_URL>>
@@ -55,7 +55,7 @@ environment:
 connectors:
   - connector_name: slack
     fields:
-      channelidentifier: <<SLACK_CHANNEL_ID>>
+      channelidentifier: "C01RF6ALQ49"
       bearertoken: <<SLACK_TOKEN>>
   - connector_name: jira
     fields:
