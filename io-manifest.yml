@@ -1,0 +1,106 @@
+application:
+  appId: GAZER-123
+  assetId: TESTAPP1
+  appName: TEST
+  sdlcType: EDM
+  appType: Webapp
+  webservice: false
+  restApi: false
+  microservice: false
+  projectLanguage: Java
+  frameworks:
+    - Spring security
+    - Hibernate
+  platformVersion: Java 8
+  buildSystem: Maven
+  riskMatrixRevision: Rev1.0
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.java|\\.jsp)+.*"
+  sensitivePackagePattern: ".*(\\+\\+\\+.*(com\\/mycompany\\/app)).*"
+  fileChangeThreshold: 1
+
+tool_information:
+- tool_name: coverity
+  enabled: true
+  fields:
+    file_path: 'coverity-results.json'
+- tool_name: polaris
+  enabled: true
+  fields:
+    project_name: iq-test
+    instance_url: <<POLARIS_SERVER_URL>>
+    auth_token: <<POLARIS_ACCESS_TOKEN>>
+- tool_name: blackduck
+  enabled: true
+  fields:
+    project_name: iq-test
+    instance_url: <<BLACKDUCK_SERVER_URL>>
+    auth_token: <<BLACKDUCK_ACCESS_TOKEN>>
+
+environment:
+  scm: github
+  scmOwner: adityabyreddy
+  scmRepositoryName: iq-test
+  scmBranchName: main
+  githubToken: <<GITHUB_TOKEN>>
+  githubApiUrl: https://api.github.com/repos/
+  testDeploymentRoot: "insecure-bank"
+  imChannelIdentifier: "#stargazer-notifications"
+  jiraProjectName: "IQ3"
+  jiraIssuesQuery: "project=IQ3"
+  jiraApiUrl: <<JIRA_API_URL>>
+  jiraAuthToken: <<JIRA_AUTH_TOKEN>>
+  jiraUserName: <<JIRA_USER_EMAIL>>
+
+connectors:
+  - connector_name: slack
+    fields:
+      channelidentifier: <<SLACK_CHANNEL_ID>>
+      bearertoken: <<SLACK_TOKEN>>
+  - connector_name: jira
+    fields:
+      issuetype: Bug
+      projectkey: <<JIRA_PROJECT_KEY>>
+      assignee: <<JIRA_ASSIGNEE>>
+      url: <<JIRA_SERVER_URL>>
+      username: <<JIRA_USERNAME>>
+      authtoken: <<JIRA_AUTH_TOKEN>>
+
+security:
+  pipeline:
+    type: "Inline"
+    toolchain: "Synopsys"
+  activities:
+    sast:
+      rescanThreshold: 10
+    sca:
+      rescanThreshold: 10
+    dast:
+      rescanThreshold: 10
+    sastplusm:
+      rescanThreshold: 10
+    dastplusm:
+      rescanThreshold: 10
+    imageScan:
+      rescanThreshold: 10
+
+buildBreaker:
+  coverity:
+    statusQuery: "new"
+    overallSeverityQuery: "high"
+    categoryQuery: "cross-site scripting"
+    categorySeverityQuery: "medium"
+  blackduck:
+    statusQuery: "new"
+    overallSeverityQuery: "medium"
+    cveQuery: ""
+    componentQuery: ""
+  seeker:
+    statusQuery: "new"
+    overallSeverityQuery: "critical"
+    categoryQuery: "SQL Injection"
+    categorySeverityQuery: "high"
+
+sct:
+  enableJira: "true"
+  jiraIssueType: "Bug"
+  enableBuildBreaker: "true"
