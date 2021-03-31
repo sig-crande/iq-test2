@@ -65,6 +65,12 @@ connectors:
       url: <<JIRA_SERVER_URL>>
       username: <<JIRA_USERNAME>>
       authtoken: <<JIRA_AUTH_TOKEN>>
+  - connector_name: github
+    fields:
+      file_path: workflowengine-results.sarif.json
+      owner_name: challarao
+      repository_name: iq-test2
+      username: challarao
 
 security:
   pipeline:
