@@ -39,7 +39,7 @@ tool_information:
 environment:
   scm: github
   scmOwner: adityabyreddy
-  scmRepositoryName: iq-test
+  scmRepositoryName: iq-test2
   scmBranchName: main
   githubToken: <<GITHUB_TOKEN>>
   githubApiUrl: https://api.github.com/repos/
