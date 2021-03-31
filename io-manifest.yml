@@ -38,7 +38,7 @@ tool_information:
 
 environment:
   scm: github
-  scmOwner: adityabyreddy
+  scmOwner: challarao
   scmRepositoryName: iq-test2
   scmBranchName: main
   githubToken: <<GITHUB_TOKEN>>
