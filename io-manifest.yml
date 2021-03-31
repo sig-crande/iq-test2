@@ -41,6 +41,7 @@ environment:
   scmOwner: challarao
   scmRepositoryName: iq-test2
   scmBranchName: master
+  githubUsername: challarao
   githubToken: <<GITHUB_TOKEN>>
   githubApiUrl: https://api.github.com/repos/
   testDeploymentRoot: "insecure-bank"
