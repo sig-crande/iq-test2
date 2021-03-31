@@ -40,11 +40,11 @@ environment:
   scm: github
   scmOwner: challarao
   scmRepositoryName: iq-test2
-  scmBranchName: main
+  scmBranchName: master
   githubToken: <<GITHUB_TOKEN>>
   githubApiUrl: https://api.github.com/repos/
   testDeploymentRoot: "insecure-bank"
-  imChannelIdentifier: "#stargazer-notifications"
+  imChannelIdentifier: "#C01RF6ALQ49"
   jiraProjectName: "IQ3"
   jiraIssuesQuery: "project=IQ3"
   jiraApiUrl: <<JIRA_API_URL>>
