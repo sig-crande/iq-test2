@@ -20,7 +20,7 @@ application:
   webservice: false
 buildbreaker: 
   - 
-    coverity: 
+      activityName: "sast"
       overallseverity: 
         - high
         - medium
@@ -31,13 +31,13 @@ buildbreaker:
         - open
         - closed
   - 
-    blackduck: 
+      activityName: "sca"
       componentQuery: ""
       cveQuery: ""
       overallSeverityQuery: medium
       statusQuery: new
   - 
-    seeker: 
+      activityName: "dast" 
       categoryQuery: "SQL Injection"
       categorySeverityQuery: high
       overallSeverityQuery: critical
