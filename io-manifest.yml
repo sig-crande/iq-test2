@@ -97,3 +97,19 @@ tool_information:
       instance_url: <<BLACKDUCK_SERVER_URL>>
       project_name: iq-test
     tool_name: blackduck
+   
+buildbreaker:
+- activityname: sast
+  status:
+  - new
+  - open
+  overallseverity:
+  - high
+  - low
+  - medium
+- activityname: sca
+  status:
+  - new
+  - open
+  overallseverity:
+  - high
