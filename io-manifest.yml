@@ -91,22 +91,22 @@ security:
       rescanThreshold: 10
 
 buildbreaker:
-  coverity:
-    status:
+ - coverity:
+     status:
       - new
       - open
       - closed
-    overallseverity:
+     overallseverity:
       - high
       - medium
       - low
       - critical
-  blackduck:
+- blackduck:
     statusQuery: "new"
     overallSeverityQuery: "medium"
     cveQuery: ""
     componentQuery: ""
-  seeker:
+- seeker:
     statusQuery: "new"
     overallSeverityQuery: "critical"
     categoryQuery: "SQL Injection"
