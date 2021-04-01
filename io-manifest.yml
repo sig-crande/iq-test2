@@ -18,30 +18,7 @@ application:
   sensitivePackagePattern: .*(\+\+\+.*(com\/mycompany\/app)).*
   sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
   webservice: false
-buildbreaker: 
-  - 
-      activityName: "sast"
-      overallseverity: 
-        - high
-        - medium
-        - low
-        - critical
-      status: 
-        - new
-        - open
-        - closed
-  - 
-      activityName: "sca"
-      componentQuery: ""
-      cveQuery: ""
-      overallSeverityQuery: medium
-      statusQuery: new
-  - 
-      activityName: "dast" 
-      categoryQuery: "SQL Injection"
-      categorySeverityQuery: high
-      overallSeverityQuery: critical
-      statusQuery: new
+
 connectors: 
   - 
     connector_name: slack
