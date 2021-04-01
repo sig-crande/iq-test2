@@ -107,9 +107,11 @@ buildbreaker:
   - high
   - low
   - medium
+  - audit
 - activityname: sca
   status:
   - new
   - open
   overallseverity:
   - high
+  - audit
