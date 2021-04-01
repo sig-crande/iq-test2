@@ -92,10 +92,15 @@ security:
 
 buildBreaker:
   coverity:
-    statusQuery: "new"
-    overallSeverityQuery: "high"
-    categoryQuery: "cross-site scripting"
-    categorySeverityQuery: "medium"
+    status:
+      - new
+      - open
+      - closed
+    overallseverity:
+      - high
+      - medium
+      - low
+      - critical
   blackduck:
     statusQuery: "new"
     overallSeverityQuery: "medium"
