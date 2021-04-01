@@ -90,7 +90,7 @@ security:
     imageScan:
       rescanThreshold: 10
 
-buildBreaker:
+buildbreaker:
   coverity:
     status:
       - new
