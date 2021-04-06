@@ -13,7 +13,7 @@ application:
   platformVersion: "Java 8"
   projectLanguage: Java
   restApi: false
-  riskMatrixRevision: Rev1.0
+  riskMatrixRevision: cr-Rev1.0
   sdlcType: EDM
   sensitivePackagePattern: .*(\+\+\+.*(com\/mycompany\/app)).*
   sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
