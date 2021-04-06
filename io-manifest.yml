@@ -3,7 +3,7 @@ application:
   appId: GAZER-124
   appName: TEST
   appType: Webapp
-  assetId: cr-TESTAPP2
+  assetId: cr-TESTAPP3
   buildSystem: Maven
   fileChangeThreshold: 3
   frameworks: 
