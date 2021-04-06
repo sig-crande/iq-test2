@@ -5,7 +5,7 @@ application:
   appType: Webapp
   assetId: cr-TESTAPP3
   buildSystem: Maven
-  fileChangeThreshold: 1
+  fileChangeThreshold: 3
   frameworks: 
     - "Spring security"
     - Hibernate
