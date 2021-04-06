@@ -1,4 +1,4 @@
-    @Library('intelligent-orchestration')
+    @Library('intelligent-orchestration-b@master')
 
     import com.demo.*
 
