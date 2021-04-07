@@ -1,4 +1,4 @@
-    @Library('intelligent-orchestration-developer-filesystem')
+    @Library('intelligent-orchestration')
 
     import com.demo.*
 
