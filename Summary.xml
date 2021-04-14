@@ -1,4 +1,5 @@
 <!-- Copyright (c) 2021 Synopsys, Inc. All rights reserved worldwide. -->
+<scan-report>
 <summary>
     <fileCount>100</fileCount>
     <locCount>54320</locCount> 
@@ -11,3 +12,4 @@
     <toolname>Coverity</toolname>
     <tooltype>SAST</tooltype>
   </summary>
+</scan-report>
