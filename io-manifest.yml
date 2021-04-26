@@ -57,7 +57,7 @@ environment:
   scmRepositoryName: iq-test2
   testDeploymentRoot: insecure-bank
 sct: 
-  enableBuildBreaker: "true"
+  enableBuildBreaker: true
   enableJira: true
   jiraIssueType: Bug
 security: 
