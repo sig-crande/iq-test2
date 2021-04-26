@@ -58,7 +58,7 @@ environment:
   testDeploymentRoot: insecure-bank
 sct: 
   enableBuildBreaker: "true"
-  enableJira: "true"
+  enableJira: true
   jiraIssueType: Bug
 security: 
   activities: 
