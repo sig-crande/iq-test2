@@ -31,7 +31,7 @@ connectors:
       assignee: <<JIRA_ASSIGNEE>>
       authtoken: <<JIRA_AUTH_TOKEN>>
       issuetype: Bug
-      projectkey: <<JIRA_PROJECT_KEY>>
+      projectkey: IQ3
       url: <<JIRA_URL>>
       username: <<JIRA_USERNAME>>
   - 
