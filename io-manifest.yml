@@ -77,7 +77,7 @@ security:
   pipeline: 
     toolchain: Synopsys
     type: Inline
-    runSonar: true
+    runSonar: false
 tool_information: 
   - 
     enabled: true
