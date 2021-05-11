@@ -50,7 +50,7 @@ environment:
   jiraAuthToken: <<JIRA_AUTH_TOKEN>>
   jiraIssuesQuery: project=IQ3
   jiraProjectName: IQ3
-  jiraUserName: <<JIRA_USER_EMAIL>>
+  jiraUserName: <<JIRA_USERNAME>>
   scm: github
   scmBranchName: master
   scmOwner: challarao
