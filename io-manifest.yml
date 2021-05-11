@@ -18,7 +18,6 @@ application:
   sensitivePackagePattern: .*(\+\+\+.*(com\/mycompany\/app)).*
   sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
   webservice: false
-  enableJira: true
 
 connectors: 
   - 
@@ -57,6 +56,8 @@ environment:
   scmOwner: challarao
   scmRepositoryName: iq-test2
   testDeploymentRoot: insecure-bank
+  enableJira: true
+
 sct: 
   enableBuildBreaker: true
   enableJira: true
