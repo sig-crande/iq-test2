@@ -18,6 +18,7 @@ application:
   sensitivePackagePattern: .*(\+\+\+.*(com\/mycompany\/app)).*
   sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
   webservice: false
+  enableJira: true
 
 connectors: 
   - 
