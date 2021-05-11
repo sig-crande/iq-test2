@@ -32,7 +32,7 @@ connectors:
       authtoken: <<JIRA_AUTH_TOKEN>>
       issuetype: Bug
       projectkey: <<JIRA_PROJECT_KEY>>
-      url: <<JIRA_API_URL>>
+      url: <<JIRA_URL>>
       username: <<JIRA_USERNAME>>
   - 
     connector_name: github
