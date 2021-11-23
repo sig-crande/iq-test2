@@ -11,8 +11,10 @@ public class DemoApplication {
 		System.out.println("Hello");
 		System.out.println("Hello");
 		System.out.println("Hello");
-				System.out.println("Hello");
-
+		System.out.println("Hello");
+		
+		Object obj = null;
+		System.out.println(obj.toString());
 	}
 
 }
